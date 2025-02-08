@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard</title>
+
+    <script src="https://cdn.tailwindcss.com"></script>
+
+</head>
+
+<body class="bg-gray-100">
+
+    <!-- Dashboard Container -->
+
+    <div class="flex h-screen">
+
+        <!-- Sidebar -->
+
+        <aside class="w-64 bg-gray-900 text-gray-100 hidden md:block">
+
+            <div class="p-5 text-xl font-bold">Devloper Student</div>
+
+            <nav>
+
+                <a href="#" class="block py-2.5 px-4 hover:bg-gray-700">Dashboard</a>
+
+                <a href="#" class="block py-2.5 px-4 hover:bg-gray-700">Projects</a>
+
+                <a href="#" class="block py-2.5 px-4 hover:bg-gray-700">Courses</a>
+
+                <a href="#" class="block py-2.5 px-4 hover:bg-gray-700">Settings</a>
+
+                <a href="#" class="block py-2.5 px-4 hover:bg-gray-700">Logout</a>
+
+            </nav>
+
+        </aside>
+
+        <!-- Main Content -->
+
+        <div class="flex-1 flex flex-col">
+
+            
+
+            <!-- Navbar -->
+
+            <header class="bg-white shadow-md p-4 flex justify-between items-center">
+
+                <h1 class="text-xl font-semibold">Dashboard</h1>
+
+                <div class="flex items-center space-x-4">
+
+                    <input type="text" placeholder="Search..." class="px-3 py-2 border rounded-lg">
+
+                  
+
+                </div>
+
+            </header>
+
+            <!-- Dashboard Cards -->
+
+            <main class="p-6 flex-1">
+
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+                    
+
+                    <!-- Card 1: Learning Progress -->
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+
+                        <h2 class="text-lg font-bold">Courses Completed</h2>
+
+                        <p class="text-2xl mt-2 font-semibold">5</p>
+
+                    </div>
+
+                    <!-- Card 2: Active Projects -->
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+
+                        <h2 class="text-lg font-bold">Active Projects</h2>
+
+                        <p class="text-2xl mt-2 font-semibold">3</p>
+
+                    </div>
+
+                    <!-- Card 3: Coding Hours -->
+
+                    <div class="bg-white p-4 rounded-lg shadow-md">
+
+                        <h2 class="text-lg font-bold">Coding Hours</h2>
+
+                        <p class="text-2xl mt-2 font-semibold">120 hrs</p>
+
+                    </div>
+
+                </div>
+
+                <!-- Projects Table -->
+
+                <div class="bg-white mt-6 p-4 rounded-lg shadow-md">
+
+                    <h2 class="text-xl font-semibold mb-4">Recent Projects</h2>
+
+                    <table class="w-full text-left">
+
+                        <thead>
+
+                            <tr class="bg-gray-200">
+
+                                <th class="p-2">Project</th>
+
+                                <th class="p-2">Status</th>
+
+                                <th class="p-2">Deadline</th>
+
+                            </tr>
+
+                        </thead>
+
+                        <tbody>
+                            <tr class="border-t">
+
+                                <td class="p-2">UI/UX Website</td>
+
+                                <td class="p-2 text-green-600">completed</td>
+
+                                <td class="p-2">Aug 2024</td>
+
+                            </tr>
+                          
+
+                            <tr class="border-t">
+
+                                <td class="p-2">Portfolio Website</td>
+
+                                <td class="p-2 text-green-600">In progress</td>
+
+                                <td class="p-2">Feb 2025</td>
+
+                            </tr>
+
+                            
+
+                            <tr class="border-t">
+
+                                <td class="p-2">Blog Website</td>
+
+                                <td class="p-2 text-red-500">Pending</td>
+
+                                <td class="p-2">March 2025</td>
+
+                            </tr>
+
+                        </tbody>
+
+                    </table>
+
+                </div>
+
+            </main>
+
+        </div>
+
+    </div>
+
+</body>
+
+</html>
